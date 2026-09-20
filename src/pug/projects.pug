@@ -1,63 +1,239 @@
-doctype html
-html(lang='en')
+<!DOCTYPE html>
+<html lang="en">
 
-    head
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Akmal-Portofolio</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
 
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+<body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Akmal Zaida</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Projects Section-->
+        <section class="py-5">
+            <div class="container px-5 mb-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Project Card: MailDesk -->
+                        <div class="card border-0 rounded-4 mb-5 experience-card project-card overflow-hidden">
+                            <div class="project-img-wrap banner-style">
+                                <img src="assets/maildesk_banner.png" alt="MailDesk app showcase">
+                            </div>
+                            <div class="card-body p-5">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap mb-1">
+                                    <div>
+                                        <h2 class="fw-bolder mb-1">MailDesk</h2>
+                                        <span class="badge tech-badge">Mobile App</span>
+                                    </div>
+                                    <span class="small text-muted">2026</span>
+                                </div>
+                                <div class="small text-muted mt-2 mb-3">Backend Developer &middot; Team Project (IT PENS
+                                    x AgileTeknik)</div>
 
-        title Modern Business - Start Bootstrap Template
+                                <p class="mb-3">
+                                    A mail management application for internal company use, featuring OCR-based document
+                                    scanning,
+                                    structured archiving with a systematic file numbering system, and a multi-level
+                                    disposition
+                                    workflow to route incoming letters through the proper chain of approval. Published
+                                    on the
+                                    Google Play Store.
+                                </p>
+                                <ul class="mb-3 ps-3">
+                                    <li>OCR for digitizing and reading incoming letters automatically.</li>
+                                    <li>Multi-level disposition tracking with automatic routing based on letter
+                                        category.</li>
+                                    <li>Smart search with filters for quickly retrieving archived documents.</li>
+                                </ul>
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge tech-badge">C#</span>
+                                    <span class="badge tech-badge">REST API</span>
+                                    <span class="badge tech-badge">OCR</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a class="btn btn-primary btn-sm px-3 py-2 rounded-pill"
+                                        href="https://play.google.com/store/apps/details?id=com.maildesk.app"
+                                        target="_blank">
+                                        <i class="bi bi-google-play me-2"></i>Play Store
+                                    </a>
+                                    <a class="btn btn-outline-primary btn-sm px-3 py-2 rounded-pill"
+                                        href="https://github.com/akmalfari/Maildesk_be" target="_blank">
+                                        <i class="bi bi-github me-2"></i>View Backend Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Card 1: Temannasi (Live) -->
+                        <div class="card border-0 rounded-4 mb-5 experience-card project-card overflow-hidden">
+                            <div class="project-img-wrap">
+                                <img src="assets/Temannasi.png" alt="Temannasi screenshot">
+                                <span class="project-tag-badge">WEB APP</span>
+                                <a class="project-live-btn" href="https://temannasi.vercel.app/" target="_blank"
+                                    title="Live Demo">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="card-body p-5">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap mb-1">
+                                    <h2 class="fw-bolder mb-0">Temannasi</h2>
+                                    <span class="small text-muted">2025</span>
+                                </div>
+                                <div class="small text-muted mb-3">Full-stack Developer &middot; Personal Project</div>
+                                <p class="mb-3">
+                                    An online storefront for a home-based rendang business ("Mamie Ulie"), featuring a
+                                    product catalog
+                                    with category filters, customer testimonials, and a WhatsApp-based ordering system
+                                    that
+                                    auto-generates pre-filled order messages for each menu item.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge tech-badge">TypeScript</span>
+                                </div>
+                                <a class="btn btn-outline-primary btn-sm px-3 py-2 rounded-pill"
+                                    href="https://github.com/akmalfari/Temannasi" target="_blank">
+                                    <i class="bi bi-github me-2"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Project Card 2: Sarpra Room Booking System -->
+                        <div class="card border-0 rounded-4 mb-5 experience-card project-card overflow-hidden">
+                            <div class="project-img-wrap">
+                                <img src="assets/sarpra_banner.png" alt="SARPRA Admin Dashboard screenshot">
+                                <span class="project-tag-badge">WEB APP</span>
+                            </div>
+                            <div class="card-body p-5">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap mb-1">
+                                    <h2 class="fw-bolder mb-0">Sarpra Room Booking System</h2>
+                                    <span class="small text-muted">2025</span>
+                                </div>
+                                <div class="small text-muted mb-3">ASP.NET Course Project &middot; Team Project</div>
+                                <p class="mb-3">
+                                    A full-stack room booking management system, built as part of an ASP.NET course
+                                    assignment.
+                                    Consists of a frontend, a backend REST API, a mobile app, infrastructure setup, and
+                                    documentation,
+                                    allowing students and staff to book and manage rooms within a campus/organization
+                                    more efficiently.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge tech-badge">React</span>
+                                    <span class="badge tech-badge">Tailwind CSS</span>
+                                    <span class="badge tech-badge">ASP.NET Core</span>
+                                    <span class="badge tech-badge">MySQL</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a class="btn btn-outline-primary btn-sm px-3 py-2 rounded-pill"
+                                        href="https://github.com/akmalfari/2026-sarpra-frontend" target="_blank">
+                                        <i class="bi bi-github me-2"></i>Frontend
+                                    </a>
+                                    <a class="btn btn-outline-primary btn-sm px-3 py-2 rounded-pill"
+                                        href="https://github.com/akmalfari/2026-sarpra-backend" target="_blank">
+                                        <i class="bi bi-github me-2"></i>Backend
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Card: App Pegawai -->
+                        <div class="card border-0 rounded-4 mb-5 experience-card project-card overflow-hidden">
+                            <div class="project-img-wrap">
+                                <img src="assets/apppegawai_banner.png" alt="App Pegawai screenshot">
+                                <span class="project-tag-badge">WEB APP</span>
+                            </div>
+                            <div class="card-body p-5">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap mb-1">
+                                    <h2 class="fw-bolder mb-0">App Pegawai</h2>
+                                    <span class="small text-muted">2024</span>
+                                </div>
+                                <div class="small text-muted mb-3">PHP Course Project</div>
+                                <p class="mb-3">
+                                    An employee management CRUD application built with Laravel as part of a PHP
+                                    programming
+                                    course assignment. Allows adding, viewing, editing, and deleting employee
+                                    records including
+                                    personal details and employment status, presented through a clean, responsive
+                                    interface.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge tech-badge">Laravel</span>
+                                    <span class="badge tech-badge">MySQL</span>
+                                    <span class="badge tech-badge">Bootstrap</span>
+                                </div>
+                                <a class="btn btn-outline-primary btn-sm px-3 py-2 rounded-pill"
+                                    href="https://github.com/akmalfari/app-pegawai" target="_blank">
+                                    <i class="bi bi-github me-2"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to action section-->
+        <section class="py-5 bg-gradient-primary-to-secondary text-white">
+            <div class="container px-5 my-5">
+                <div class="text-center">
+                    <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0">Copyright &copy; Akmal Zaida 2026</div>
+                </div>
+                <div class="col-auto">
+                    <a class="small" href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
 
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-
-        include includes/css.pug
-
-    body.d-flex.flex-column.h-100.bg-light
-
-        main.flex-shrink-0
-
-            // Navigation
-            include includes/navbar.pug
-
-            // Projects Section
-            section.py-5
-                .container.px-5.mb-5
-                    .text-center.mb-5
-                        h1.display-5.fw-bolder.mb-0
-                            span.text-gradient.d-inline Projects
-                    .row.gx-5.justify-content-center
-
-                        .col-lg-11.col-xl-9.col-xxl-8
-
-                            // Project Card 1
-                            .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
-                                .card-body.p-0
-                                    .d-flex.align-items-center
-                                        .p-5
-                                            h2.fw-bolder Project Name 1
-                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!
-                                        img.img-fluid(src='https://dummyimage.com/300x400/343a40/6c757d', alt='...')
-
-                            // Project Card 2
-                            .card.overflow-hidden.shadow.rounded-4.border-0
-                                .card-body.p-0
-                                    .d-flex.align-items-center
-                                        .p-5
-                                            h2.fw-bolder Project Name 2
-                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!
-                                        img.img-fluid(src='https://dummyimage.com/300x400/343a40/6c757d', alt='...')
-
-            // Call to action section
-            section.py-5.bg-gradient-primary-to-secondary.text-white
-                .container.px-5.my-5
-                    .text-center
-                        h2.display-4.fw-bolder.mb-4 Let's build something together
-                        a.btn.btn-outline-light.btn-lg.px-5.py-3.fs-6.fw-bolder(href='contact.html') Contact me
-
-        // Footer
-        include includes/footer.pug
-
-        include includes/scripts.pug
+</html>
