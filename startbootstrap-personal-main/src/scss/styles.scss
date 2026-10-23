@@ -11,3 +11,35 @@
 // Import Custom Component Styles
 @import "components/feature";
 @import "components/profile";
+
+.resume-compact {
+    font-size: 0.9rem;
+    .card-body {
+        padding: 1.5rem !important;
+    }
+    h1, .display-5 {
+        font-size: 1.75rem !important;
+    }
+    h2 {
+        font-size: 1.25rem !important;
+    }
+    h3 {
+        font-size: 1.1rem !important;
+    }
+    p, li {
+        font-size: 0.9rem !important;
+        line-height: 1.55;
+    }
+    .experience-date-badge,
+    .education-date-badge {
+        font-size: 0.75rem !important;
+        padding: 0.3rem 0.75rem !important;
+    }
+    .tech-badge {
+        font-size: 0.75rem !important;
+        padding: 0.3rem 0.75rem !important;
+    }
+    .btn-sm {
+        font-size: 0.8rem !important;
+    }
+}
