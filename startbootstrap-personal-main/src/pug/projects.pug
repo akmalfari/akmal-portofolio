@@ -1,63 +1,165 @@
 doctype html
-html(lang='en')
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="description", content="")
+    meta(name="author", content="")
+    title Akmal-Portofolio
+    link(rel="icon", type="image/x-icon", href="assets/favicon.ico")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap", rel="stylesheet")
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css", rel="stylesheet")
+    link(href="css/styles.css", rel="stylesheet")
+  body.d-flex.flex-column.h-100.bg-light
+    main.flex-shrink-0
+      nav.navbar.navbar-expand-lg.navbar-light.bg-white.py-3
+        .container.px-5
+          a.navbar-brand(href="index.html")
+            span.fw-bolder.text-primary Akmal Zaida
+          button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.ms-auto.mb-2.mb-lg-0.small.fw-bolder
+              li.nav-item
+                a.nav-link(href="index.html") Home
+              li.nav-item
+                a.nav-link(href="resume.html") Resume
+              li.nav-item
+                a.nav-link(href="projects.html") Projects
+              li.nav-item
+                a.nav-link(href="contact.html") Contact
 
-    head
+      //- Projects Section
+      section.py-5
+        .container.px-5.mb-5
+          .text-center.mb-5
+            h1.display-5.fw-bolder.mb-0
+              span.text-gradient.d-inline Projects
+          .row.gx-5.justify-content-center
+            .col-lg-11.col-xl-9.col-xxl-8
 
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+              //- Project Card: MailDesk
+              .card.border-0.rounded-4.mb-5.experience-card.project-card.overflow-hidden
+                .project-img-wrap.banner-style
+                  img(src="assets/maildesk_banner.png", alt="MailDesk app showcase")
+                .card-body.p-5
+                  .d-flex.justify-content-between.align-items-start.flex-wrap.mb-1
+                    div
+                      h2.fw-bolder.mb-1 MailDesk
+                      span.badge.tech-badge Mobile App
+                    span.small.text-muted 2026
+                  .small.text-muted.mt-2.mb-3 Backend Developer &middot; Team Project (IT PENS x AgileTeknik)
+                  p.mb-3.
+                    A mail management application for internal company use, featuring OCR-based document scanning,
+                    structured archiving with a systematic file numbering system, and a multi-level disposition
+                    workflow to route incoming letters through the proper chain of approval. Published on the
+                    Google Play Store.
+                  ul.mb-3.ps-3
+                    li OCR for digitizing and reading incoming letters automatically.
+                    li Multi-level disposition tracking with automatic routing based on letter category.
+                    li Smart search with filters for quickly retrieving archived documents.
+                  .d-flex.flex-wrap.gap-2.mb-3
+                    span.badge.tech-badge C#
+                    span.badge.tech-badge REST API
+                    span.badge.tech-badge OCR
+                  .d-flex.flex-wrap.gap-2
+                    a.btn.btn-primary.btn-sm.px-3.py-2.rounded-pill(href="https://play.google.com/store/apps/details?id=com.maildesk.app", target="_blank")
+                      i.bi.bi-google-play.me-2
+                      | Play Store
+                    a.btn.btn-outline-primary.btn-sm.px-3.py-2.rounded-pill(href="https://github.com/akmalfari/Maildesk_be", target="_blank")
+                      i.bi.bi-github.me-2
+                      | View Backend Code
 
-        title Modern Business - Start Bootstrap Template
+              //- Project Card 1: Temannasi (Live)
+              .card.border-0.rounded-4.mb-5.experience-card.project-card.overflow-hidden
+                .project-img-wrap
+                  img(src="assets/Temannasi.png", alt="Temannasi screenshot")
+                  span.project-tag-badge WEB APP
+                  a.project-live-btn(href="https://temannasi.vercel.app/", target="_blank", title="Live Demo")
+                    i.bi.bi-arrow-up-right
+                .card-body.p-5
+                  .d-flex.justify-content-between.align-items-start.flex-wrap.mb-1
+                    h2.fw-bolder.mb-0 Temannasi
+                    span.small.text-muted 2025
+                  .small.text-muted.mb-3 Full-stack Developer &middot; Personal Project
+                  p.mb-3.
+                    An online storefront for a home-based rendang business ("Mamie Ulie"), featuring a product catalog
+                    with category filters, customer testimonials, and a WhatsApp-based ordering system that
+                    auto-generates pre-filled order messages for each menu item.
+                  .d-flex.flex-wrap.gap-2.mb-3
+                    span.badge.tech-badge TypeScript
+                  a.btn.btn-outline-primary.btn-sm.px-3.py-2.rounded-pill(href="https://github.com/akmalfari/Temannasi", target="_blank")
+                    i.bi.bi-github.me-2
+                    | View Code
 
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+              //- Project Card 2: Sarpra Room Booking System
+              .card.border-0.rounded-4.mb-5.experience-card.project-card.overflow-hidden
+                .project-img-wrap
+                  img(src="assets/sarpra_banner.png", alt="SARPRA Admin Dashboard screenshot")
+                  span.project-tag-badge WEB APP
+                .card-body.p-5
+                  .d-flex.justify-content-between.align-items-start.flex-wrap.mb-1
+                    h2.fw-bolder.mb-0 Sarpra Room Booking System
+                    span.small.text-muted 2025
+                  .small.text-muted.mb-3 ASP.NET Course Project &middot; Team Project
+                  p.mb-3.
+                    A full-stack room booking management system, built as part of an ASP.NET course assignment.
+                    Consists of a frontend, a backend REST API, a mobile app, infrastructure setup, and documentation,
+                    allowing students and staff to book and manage rooms within a campus/organization more efficiently.
+                  .d-flex.flex-wrap.gap-2.mb-3
+                    span.badge.tech-badge React
+                    span.badge.tech-badge Tailwind CSS
+                    span.badge.tech-badge ASP.NET Core
+                    span.badge.tech-badge MySQL
+                  .d-flex.flex-wrap.gap-2
+                    a.btn.btn-outline-primary.btn-sm.px-3.py-2.rounded-pill(href="https://github.com/akmalfari/2026-sarpra-frontend", target="_blank")
+                      i.bi.bi-github.me-2
+                      | Frontend
+                    a.btn.btn-outline-primary.btn-sm.px-3.py-2.rounded-pill(href="https://github.com/akmalfari/2026-sarpra-backend", target="_blank")
+                      i.bi.bi-github.me-2
+                      | Backend
 
-        include includes/css.pug
+              //- Project Card: App Pegawai
+              .card.border-0.rounded-4.mb-5.experience-card.project-card.overflow-hidden
+                .project-img-wrap
+                  img(src="assets/apppegawai_banner.png", alt="App Pegawai screenshot")
+                  span.project-tag-badge WEB APP
+                .card-body.p-5
+                  .d-flex.justify-content-between.align-items-start.flex-wrap.mb-1
+                    h2.fw-bolder.mb-0 App Pegawai
+                    span.small.text-muted 2024
+                  .small.text-muted.mb-3 PHP Course Project
+                  p.mb-3.
+                    An employee management CRUD application built with Laravel as part of a PHP programming
+                    course assignment. Allows adding, viewing, editing, and deleting employee records including
+                    personal details and employment status, presented through a clean, responsive interface.
+                  .d-flex.flex-wrap.gap-2.mb-3
+                    span.badge.tech-badge Laravel
+                    span.badge.tech-badge MySQL
+                    span.badge.tech-badge Bootstrap
+                  a.btn.btn-outline-primary.btn-sm.px-3.py-2.rounded-pill(href="https://github.com/akmalfari/app-pegawai", target="_blank")
+                    i.bi.bi-github.me-2
+                    | View Code
 
-    body.d-flex.flex-column.h-100.bg-light
+      //- Call to action section
+      section.py-5.bg-gradient-primary-to-secondary.text-white
+        .container.px-5.my-5
+          .text-center
+            h2.display-4.fw-bolder.mb-4 Let's build something together
+            a.btn.btn-outline-light.btn-lg.px-5.py-3.fs-6.fw-bolder(href="contact.html") Contact me
 
-        main.flex-shrink-0
-
-            // Navigation
-            include includes/navbar.pug
-
-            // Projects Section
-            section.py-5
-                .container.px-5.mb-5
-                    .text-center.mb-5
-                        h1.display-5.fw-bolder.mb-0
-                            span.text-gradient.d-inline Projects
-                    .row.gx-5.justify-content-center
-
-                        .col-lg-11.col-xl-9.col-xxl-8
-
-                            // Project Card 1
-                            .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
-                                .card-body.p-0
-                                    .d-flex.align-items-center
-                                        .p-5
-                                            h2.fw-bolder Project Name 1
-                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!
-                                        img.img-fluid(src='https://dummyimage.com/300x400/343a40/6c757d', alt='...')
-
-                            // Project Card 2
-                            .card.overflow-hidden.shadow.rounded-4.border-0
-                                .card-body.p-0
-                                    .d-flex.align-items-center
-                                        .p-5
-                                            h2.fw-bolder Project Name 2
-                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!
-                                        img.img-fluid(src='https://dummyimage.com/300x400/343a40/6c757d', alt='...')
-
-            // Call to action section
-            section.py-5.bg-gradient-primary-to-secondary.text-white
-                .container.px-5.my-5
-                    .text-center
-                        h2.display-4.fw-bolder.mb-4 Let's build something together
-                        a.btn.btn-outline-light.btn-lg.px-5.py-3.fs-6.fw-bolder(href='contact.html') Contact me
-
-        // Footer
-        include includes/footer.pug
-
-        include includes/scripts.pug
+    footer.bg-white.py-4.mt-auto
+      .container.px-5
+        .row.align-items-center.justify-content-between.flex-column.flex-sm-row
+          .col-auto
+            .small.m-0 Copyright &copy; Akmal Zaida 2026
+          .col-auto
+            a.small(href="#!") Privacy
+            span.mx-1 &middot;
+            a.small(href="#!") Terms
+            span.mx-1 &middot;
+            a.small(href="contact.html") Contact
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js")
+    script(src="js/scripts.js")
