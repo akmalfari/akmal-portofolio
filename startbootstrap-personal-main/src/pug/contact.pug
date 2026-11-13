@@ -45,7 +45,9 @@ html(lang="en")
               .col-lg-8.col-xl-6
                 //- Form ini menggunakan FormSubmit (gratis, tanpa perlu backend sendiri)
                 //- Kiriman pesan akan langsung masuk ke email di bawah ini
-                form#contactForm(action="https://formsubmit.co/akmalfari1789@gmail.com", method="POST")
+                form#contactForm(action="https://formsubmit.co/akmalfari1789@gmail.com", method="POST", data-ajax-url="https://formsubmit.co/ajax/akmalfari1789@gmail.com")
+                  //- Jebakan spam: kolom ini disembunyikan, bot biasanya mengisinya
+                  input(type="text", name="_honeypot", style="display: none", tabindex="-1", autocomplete="off")
                   //- Judul email yang diterima
                   input(type="hidden", name="_subject", value="Pesan baru dari Portofolio!")
                   //- Matikan captcha bawaan FormSubmit
@@ -69,6 +71,16 @@ html(lang="en")
                   .form-floating.mb-3
                     textarea#message.form-control(name="Pesan", placeholder="Enter your message here...", style="height: 10rem", required)
                     label(for="message") Message
+
+                  //- Pesan status setelah mengirim (diatur oleh js/scripts.js)
+                  #submitSuccess.alert.alert-success.d-none(role="alert")
+                    | Terima kasih! Pesanmu sudah terkirim ke email saya dan akan segera dibalas.
+                  #submitError.alert.alert-danger.d-none(role="alert")
+                    | Maaf, pesan gagal terkirim. Silakan kirim langsung ke
+                    |
+                    a(href="mailto:akmalfari1789@gmail.com") akmalfari1789@gmail.com
+                    | .
+
                   //- Submit Button
                   .d-grid
                     button#submitButton.btn.btn-primary.btn-lg(type="submit") Submit
