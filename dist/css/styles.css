@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2026 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
 */
 /*!
@@ -10,110 +10,6 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-.experience-card {
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    border-left: 4px solid #0d6efd;
-    transition: transform .2s ease, box-shadow .2s ease;
-}
-.experience-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-}
-.experience-date-badge {
-    background: rgba(13,110,253,0.1);
-    color: #0d6efd;
-    font-weight: 700;
-    padding: .45rem 1rem;
-    border-radius: 50px;
-    font-size: .85rem;
-}
-.tech-badge {
-    background: #eef1ff !important;
-    color: #3a3aff !important;
-    font-weight: 600;
-    padding: .45rem .9rem;
-    border-radius: 50px;
-    font-size: .8rem;
-}
-
-.education-card {
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    border-left: 4px solid #d6336c;
-    transition: transform .2s ease, box-shadow .2s ease;
-}
-.education-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-}
-.education-date-badge {
-    background: rgba(214,51,108,0.1);
-    color: #d6336c !important;
-    font-weight: 700;
-    padding: .45rem 1rem;
-    border-radius: 50px;
-    font-size: .85rem;
-}
-.project-img-wrap.banner-style {
-    position: static;
-    background: linear-gradient(135deg, #e6fbf5, #d3f3ea);
-    padding: 1.5rem;
-    border-radius: 1rem 1rem 0 0;
-}
-.project-img-wrap.banner-style img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    border-radius: 0.5rem;
-}
-.project-img-wrap {
-    position: relative;
-    overflow: hidden;
-    border-radius: 1rem 1rem 0 0;
-}
-.project-img-wrap img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    display: block;
-    transition: transform .3s ease;
-}
-.project-card:hover .project-img-wrap img {
-    transform: scale(1.04);
-}
-.project-tag-badge {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    background: rgba(0,0,0,0.65);
-    color: #fff;
-    padding: .4rem 1rem;
-    border-radius: 50px;
-    font-size: .75rem;
-    font-weight: 700;
-    letter-spacing: .03em;
-}
-.project-live-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(6px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: background .2s ease, color .2s ease;
-}
-.project-live-btn:hover {
-    background: #fff;
-    color: #0d6efd;
-}
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
@@ -11835,4 +11731,156 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+.experience-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #0d6efd;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.experience-date-badge {
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  font-weight: 700;
+  padding: 0.45rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+}
+
+.tech-badge {
+  background: #eef1ff !important;
+  color: #3a3aff !important;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+
+.education-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #d6336c;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.education-date-badge {
+  background: rgba(214, 51, 108, 0.1);
+  color: #d6336c !important;
+  font-weight: 700;
+  padding: 0.45rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+}
+
+.project-img-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.project-img-wrap img {
+  width: 100%;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img-wrap img {
+  transform: scale(1.04);
+}
+
+.project-img-wrap.banner-style {
+  position: static;
+  background: linear-gradient(135deg, #e6fbf5, #d3f3ea);
+  padding: 1.5rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.project-img-wrap.banner-style img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.project-tag-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.project-live-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.project-live-btn:hover {
+  background: #fff;
+  color: #0d6efd;
+}
+
+.resume-compact {
+  font-size: 0.9rem;
+}
+.resume-compact .card-body {
+  padding: 1.5rem !important;
+}
+.resume-compact h1, .resume-compact .h1, .resume-compact .display-5 {
+  font-size: 1.75rem !important;
+}
+.resume-compact h2, .resume-compact .h2 {
+  font-size: 1.25rem !important;
+}
+.resume-compact h3, .resume-compact .h3 {
+  font-size: 1.1rem !important;
+}
+.resume-compact p, .resume-compact li {
+  font-size: 0.9rem !important;
+  line-height: 1.55;
+}
+.resume-compact .experience-date-badge,
+.resume-compact .education-date-badge {
+  font-size: 0.75rem !important;
+  padding: 0.3rem 0.75rem !important;
+}
+.resume-compact .tech-badge {
+  font-size: 0.75rem !important;
+  padding: 0.3rem 0.75rem !important;
+}
+.resume-compact .btn-sm, .resume-compact .btn-group-sm > .btn {
+  font-size: 0.8rem !important;
 }

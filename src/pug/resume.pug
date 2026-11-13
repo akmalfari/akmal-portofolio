@@ -31,9 +31,9 @@ html(lang="en")
               li.nav-item
                 a.nav-link(href="contact.html") Contact
 
-      .container.px-5.my-5
-        .text-center.mb-5
-          h1.display-5.fw-bolder.mb-0
+      .container.px-5.my-5.resume-compact
+        .text-center.mb-4
+          h1.fs-2.fw-bolder.mb-0
             span.text-gradient.d-inline Resume
         .row.gx-5.justify-content-center
           .col-lg-11.col-xl-9.col-xxl-8
@@ -41,16 +41,16 @@ html(lang="en")
             //- Experience Section
             section
               .d-flex.align-items-center.justify-content-between.mb-4
-                h2.text-primary.fw-bolder.mb-0 Work Experience
-                a.btn.btn-primary.px-4.py-3(href="assets/Akmal_Zaida_Fari_CV.pdf", target="_blank")
+                h2.fs-4.text-primary.fw-bolder.mb-0 Work Experience
+                a.btn.btn-primary.btn-sm.px-3.py-2(href="assets/Akmal_Zaida_Fari_CV.pdf", target="_blank")
                   .d-inline-block.bi.bi-download.me-2
                   | Download Resume
 
               //- Experience Card 1
-              .card.border-0.rounded-4.mb-5.experience-card
-                .card-body.p-5
+              .card.border-0.rounded-4.mb-4.experience-card
+                .card-body.p-4
                   .d-flex.justify-content-between.align-items-start.flex-wrap.mb-1
-                    .fw-bolder.fs-5 Backend Dev
+                    .fw-bolder Backend Dev
                     span.experience-date-badge Nov 2023 &ndash; April 2024
                   .text-primary.fw-semibold PT Otak Kanan
                   .small.text-muted.mb-3
@@ -72,23 +72,23 @@ html(lang="en")
 
             //- Education Section
             section
-              h2.text-secondary.fw-bolder.mb-4 Education
+              h2.fs-4.text-secondary.fw-bolder.mb-4 Education
 
               //- Education Card 1
-              .card.border-0.rounded-4.mb-5.education-card
-                .card-body.p-5
+              .card.border-0.rounded-4.mb-4.education-card
+                .card-body.p-4
                   .d-flex.justify-content-between.align-items-start.flex-wrap.mb-1
-                    .fw-bolder.fs-5 Electronic Engineering Polytechnic Institute of Surabaya
+                    .fw-bolder Electronic Engineering Polytechnic Institute of Surabaya
                     span.education-date-badge 2024 - Present
                   .text-secondary.fw-semibold Surabaya, Indonesia
                   .fst-italic.small.text-muted.mb-3 Applied Bachelor's Degree (D4), Major in Informatics Engineering
                   p.mb-0 Currently pursuing a D4 degree in Informatics Engineering, building a strong foundation in software development, databases, and web-based systems.
 
               //- Education Card 2
-              .card.border-0.rounded-4.mb-5.education-card
-                .card-body.p-5
+              .card.border-0.rounded-4.mb-4.education-card
+                .card-body.p-4
                   .d-flex.justify-content-between.align-items-start.flex-wrap.mb-1
-                    .fw-bolder.fs-5 SMK Telkom Malang
+                    .fw-bolder SMK Telkom Malang
                     span.education-date-badge 2021 - 2024
                   .text-secondary.fw-semibold Malang, Indonesia
                   .fst-italic.small.text-muted.mb-3 Software Engineering (RPL - Rekayasa Perangkat Lunak)
@@ -96,13 +96,13 @@ html(lang="en")
 
             //- Organizational Experience Section
             section
-              h2.text-primary.fw-bolder.mb-4 Organizational Experience
+              h2.fs-4.text-primary.fw-bolder.mb-4 Organizational Experience
 
               //- Org Card 1
-              .card.border-0.rounded-4.mb-5.experience-card
-                .card-body.p-5
+              .card.border-0.rounded-4.mb-4.experience-card
+                .card-body.p-4
                   .d-flex.justify-content-between.align-items-start.flex-wrap.mb-1
-                    .fw-bolder.fs-5 Junior Staff, PSDM Division
+                    .fw-bolder Junior Staff, PSDM Division
                     span.experience-date-badge  present
                   .text-primary.fw-semibold Informatics Engineering Student Association (HIMIT)
                   .small.text-muted.mb-3
@@ -111,12 +111,12 @@ html(lang="en")
                   p.mb-0 Responsible for managing HIMIT's overall student human resources and leading cadre development programs to prepare future generations of the organization.
 
               //- Certifications Card
-              .card.shadow.border-0.rounded-4.mb-5
-                .card-body.p-5
+              .card.shadow.border-0.rounded-4.mb-4
+                .card-body.p-4
                   .d-flex.align-items-center.mb-4
                     .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
                       i.bi.bi-patch-check
-                    h3.fw-bolder.mb-0
+                    h3.fs-5.fw-bolder.mb-0
                       span.text-gradient.d-inline Certifications
 
                   //- Certificate item 1
@@ -151,14 +151,14 @@ html(lang="en")
               //- Skills Section
               section
                 //- Skillset Card
-                .card.shadow.border-0.rounded-4.mb-5
-                  .card-body.p-5
+                .card.shadow.border-0.rounded-4.mb-4
+                  .card-body.p-4
                     //- Professional skills list
-                    .mb-5
-                      .d-flex.align-items-center.mb-4
+                    .mb-4
+                      .d-flex.align-items-center.mb-3
                         .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
                           i.bi.bi-tools
-                        h3.fw-bolder.mb-0
+                        h3.fs-5.fw-bolder.mb-0
                           span.text-gradient.d-inline Professional Skills
                       .row.row-cols-1.row-cols-md-3.mb-4
                         .col.mb-4.mb-md-0
@@ -170,10 +170,10 @@ html(lang="en")
 
                     //- Languages list
                     .mb-0
-                      .d-flex.align-items-center.mb-4
+                      .d-flex.align-items-center.mb-3
                         .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
                           i.bi.bi-code-slash
-                        h3.fw-bolder.mb-0
+                        h3.fs-5.fw-bolder.mb-0
                           span.text-gradient.d-inline Languages
                       .row.row-cols-1.row-cols-md-3.g-4
                         .col

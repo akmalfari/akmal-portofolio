@@ -1,7 +1,42 @@
 /*!
 * Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2026 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
 */
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+// Kirim form kontak tanpa pindah halaman, lalu tampilkan pesan berhasil/gagal.
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+    const submitButton = document.getElementById('submitButton');
+    const successMessage = document.getElementById('submitSuccess');
+    const errorMessage = document.getElementById('submitError');
+
+    contactForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        successMessage.classList.add('d-none');
+        errorMessage.classList.add('d-none');
+        submitButton.disabled = true;
+        submitButton.textContent = 'Mengirim...';
+
+        try {
+            const response = await fetch(contactForm.dataset.ajaxUrl, {
+                method: 'POST',
+                headers: { Accept: 'application/json' },
+                body: new FormData(contactForm),
+            });
+            const result = await response.json();
+
+            if (response.ok && String(result.success) === 'true') {
+                contactForm.reset();
+                successMessage.classList.remove('d-none');
+            } else {
+                throw new Error(result.message || 'Gagal mengirim');
+            }
+        } catch (error) {
+            errorMessage.classList.remove('d-none');
+        } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Submit';
+        }
+    });
+}
