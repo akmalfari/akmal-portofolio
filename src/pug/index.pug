@@ -34,14 +34,30 @@ html(lang="en")
             .tech-marquee__track
               each duplicate in [0, 1]
                 .tech-marquee__group(aria-hidden=duplicate === 1 ? "true" : "false")
-                  span #[i.bi.bi-filetype-html(aria-hidden="true")] HTML
-                  span #[i.bi.bi-filetype-css(aria-hidden="true")] CSS
-                  span #[i.bi.bi-filetype-js(aria-hidden="true")] JavaScript
-                  span #[i.bi.bi-filetype-php(aria-hidden="true")] PHP
-                  span #[i.bi.bi-bootstrap(aria-hidden="true")] Bootstrap
-                  span #[i.bi.bi-database(aria-hidden="true")] MySQL
-                  span #[i.bi.bi-git(aria-hidden="true")] Git
-                  span #[i.bi.bi-code-square(aria-hidden="true")] C#
+                  span
+                    img(src="assets/svg/html5.svg", alt="HTML5", width="32", height="32", loading=duplicate === 1 ? "lazy" : false)
+                    | HTML5
+                  span
+                    img(src="assets/svg/css3.svg", alt="CSS3", width="32", height="32", loading=duplicate === 1 ? "lazy" : false)
+                    | CSS3
+                  span
+                    img(src="assets/svg/javascript.svg", alt="JavaScript", width="32", height="32", loading=duplicate === 1 ? "lazy" : false)
+                    | JavaScript
+                  span
+                    img(src="assets/svg/php.svg", alt="PHP", width="32", height="32", loading=duplicate === 1 ? "lazy" : false)
+                    | PHP
+                  span
+                    img(src="assets/svg/bootstrap.svg", alt="Bootstrap", width="32", height="32", loading=duplicate === 1 ? "lazy" : false)
+                    | Bootstrap
+                  span
+                    img(src="assets/svg/mysql.svg", alt="MySQL", width="32", height="32", loading=duplicate === 1 ? "lazy" : false)
+                    | MySQL
+                  span
+                    img(src="assets/svg/git.svg", alt="Git", width="32", height="32", loading=duplicate === 1 ? "lazy" : false)
+                    | Git
+                  span
+                    img(src="assets/svg/csharp.svg", alt="C#", width="32", height="32", loading=duplicate === 1 ? "lazy" : false)
+                    | C#
 
           .home-detail
             .home-about

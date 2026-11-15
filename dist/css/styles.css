@@ -12291,8 +12291,12 @@ html {
   white-space: nowrap;
 }
 
-.tech-marquee__group i {
-  font-size: 1.8rem;
+.tech-marquee__group img {
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @keyframes marquee {
