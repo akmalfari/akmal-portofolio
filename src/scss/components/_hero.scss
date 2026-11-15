@@ -1,0 +1,250 @@
+.hero {
+    padding: clamp(7rem, 15vw, 11rem) 0 2rem;
+}
+
+.hero__hello {
+    margin-bottom: 1rem;
+    color: var(--white-icon);
+    font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+.hero__intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(17rem, .55fr);
+    align-items: center;
+    gap: clamp(2rem, 6vw, 5rem);
+}
+
+.hero__copy {
+    min-width: 0;
+}
+
+.hero__intro h1 {
+    margin: 0;
+    font-size: clamp(3.2rem, 8vw, 6.2rem);
+    font-weight: 520;
+    line-height: .95;
+    letter-spacing: -.07em;
+}
+
+.hero__intro p {
+    max-width: 42rem;
+    margin: 2rem 0 0;
+    color: var(--white-icon);
+    font-size: clamp(1.15rem, 2.5vw, 1.65rem);
+    line-height: 1.55;
+}
+
+.hero__portrait {
+    position: relative;
+    align-self: stretch;
+    min-height: 30rem;
+    overflow: hidden;
+    border: 1px solid var(--hairline);
+    border-radius: 2rem;
+    background: radial-gradient(circle at 50% 30%, rgba(164, 118, 255, .28), transparent 55%), var(--surface);
+}
+
+.hero__portrait::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    content: "";
+    background: linear-gradient(to top, var(--background), transparent);
+}
+
+.hero__portrait img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: min(125%, 29rem);
+    height: 100%;
+    transform: translateX(-50%);
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+.shiny-accent {
+    color: transparent;
+    background: linear-gradient(110deg, var(--sec) 25%, #eee5ff 50%, var(--sec) 75%);
+    background-size: 400% 100%;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    from { background-position: 100% 50%; }
+    to { background-position: 0 50%; }
+}
+
+.icon-links {
+    display: flex;
+    gap: .65rem;
+    margin-top: 2rem;
+}
+
+.icon-links a,
+.icon-button {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    place-items: center;
+    border: 1px solid var(--hairline);
+    border-radius: .85rem;
+    color: var(--white-icon);
+    background: var(--surface);
+    font-size: 1.35rem;
+    text-decoration: none;
+    transition: color .2s, background-color .2s, transform .2s;
+}
+
+.icon-links a:hover,
+.icon-button:hover {
+    transform: translateY(-2px);
+    color: var(--white);
+    background: var(--white-icon-tr);
+}
+
+.tech-marquee {
+    position: relative;
+    overflow: hidden;
+    margin: 4rem 0;
+    padding: 1.5rem 0;
+    mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+
+.tech-marquee__track {
+    display: flex;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+}
+
+.tech-marquee__group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.tech-marquee__group span {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    padding-right: clamp(2.5rem, 6vw, 5rem);
+    color: var(--white-icon);
+    white-space: nowrap;
+}
+
+.tech-marquee__group i {
+    font-size: 1.8rem;
+}
+
+@keyframes marquee {
+    to { transform: translateX(-50%); }
+}
+
+.home-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 7vw, 6rem);
+    padding-top: 3rem;
+    border-top: 1px solid var(--hairline);
+}
+
+.home-about h2,
+.skills-accordion > h2 {
+    margin-bottom: 1.25rem;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    font-weight: 550;
+    letter-spacing: -.04em;
+}
+
+.home-about > p:last-child {
+    color: var(--white-icon);
+    line-height: 1.8;
+}
+
+.skills-accordion {
+    display: grid;
+    align-content: start;
+    gap: .75rem;
+}
+
+.skills-accordion details {
+    overflow: hidden;
+}
+
+.skills-accordion summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 64px;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+.skills-accordion summary span {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.skills-accordion summary span i {
+    color: var(--sec);
+}
+
+.skills-accordion details > ul {
+    margin: 0 1.25rem 1.25rem 3.25rem;
+    padding: 0;
+    color: var(--white-icon);
+}
+
+.skills-accordion details[open] summary > i {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 767.98px) {
+    .hero {
+        padding-top: 3.5rem;
+    }
+
+    .hero__intro,
+    .home-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__intro {
+        gap: 1.5rem;
+    }
+
+    .hero__portrait {
+        min-height: 25rem;
+        margin-top: 1rem;
+    }
+
+    .tech-marquee {
+        margin: 2.5rem 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tech-marquee__track {
+        width: 100%;
+        animation: none;
+    }
+
+    .tech-marquee__group {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .tech-marquee__group:nth-child(2) {
+        display: none;
+    }
+
+    .tech-marquee__group span {
+        padding: 0;
+    }
+}

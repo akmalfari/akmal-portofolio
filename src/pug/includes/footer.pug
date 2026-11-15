@@ -1,11 +1,13 @@
-footer.bg-white.py-4.mt-auto
-    .container.px-5
-        .row.align-items-center.justify-content-between.flex-column.flex-sm-row
-            .col-auto
-                .small.m-0 Copyright &copy; Your Website 2023
-            .col-auto
-                a.small(href='#!') Privacy
-                span.mx-1 &middot;
-                a.small(href='#!') Terms
-                span.mx-1 &middot;
-                a.small(href='#!') Contact
+footer.site-footer
+  .site-shell.site-footer__grid
+    .site-footer__socials(aria-label="Social links")
+      a(href="https://github.com/akmalfari", target="_blank", rel="noopener noreferrer", aria-label="Akmal Zaida on GitHub")
+        i.bi.bi-github(aria-hidden="true")
+      a(href="https://www.linkedin.com/in/akmal-zaida", target="_blank", rel="noopener noreferrer", aria-label="Akmal Zaida on LinkedIn")
+        i.bi.bi-linkedin(aria-hidden="true")
+      a(href="mailto:akmalfari1789@gmail.com", aria-label="Email Akmal Zaida")
+        i.bi.bi-envelope(aria-hidden="true")
+    .site-footer__stack
+      span Built with Bootstrap 5
+      span Deployed on Vercel
+    p.site-footer__copyright Copyright &copy; 2026 Akmal Zaida

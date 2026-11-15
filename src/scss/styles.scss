@@ -5,6 +5,7 @@
 @import "bootstrap/scss/bootstrap.scss";
 
 // Import Global Theme Styles
+@import "components/theme";
 @import "global";
 @import "utilities";
 
@@ -12,6 +13,11 @@
 @import "components/feature";
 @import "components/profile";
 @import "components/cards";  
+@import "components/nav";
+@import "components/footer";
+@import "components/hero";
+@import "components/resume";
+@import "components/contact";
 
 .resume-compact {
     font-size: 0.9rem;

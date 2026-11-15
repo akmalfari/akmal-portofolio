@@ -1,0 +1,112 @@
+.site-nav {
+    position: fixed;
+    z-index: 1000;
+    top: 1.5rem;
+    left: 50%;
+    width: min(80%, 64rem);
+    min-height: 3.75rem;
+    transform: translateX(-50%);
+    border: 1px solid transparent;
+    transition: width .5s cubic-bezier(.22, 1, .36, 1), background-color .3s, border-color .3s, border-radius .3s;
+}
+
+.site-nav.is-scrolled {
+    border-color: var(--hairline);
+    border-radius: 999px;
+    background: rgba(20, 20, 20, .82);
+    backdrop-filter: blur(14px);
+}
+
+.site-nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(1rem, 4vw, 3rem);
+    min-height: inherit;
+    margin: 0;
+    padding: .45rem 1rem;
+    list-style: none;
+}
+
+.site-nav__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    color: var(--white-icon);
+    font-size: .9rem;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.site-nav__link i {
+    display: none;
+}
+
+.site-nav__link:hover,
+.site-nav__link.is-active {
+    color: var(--white);
+}
+
+.site-nav__dot {
+    position: absolute;
+    top: 50%;
+    left: -.9rem;
+    width: .4rem;
+    height: .4rem;
+    transform: translateY(-50%) scale(0);
+    border-radius: 50%;
+    background: var(--sec);
+    transition: transform .2s;
+}
+
+.site-nav__link.is-active .site-nav__dot {
+    transform: translateY(-50%) scale(1);
+}
+
+@media (max-width: 767.98px) {
+    .site-nav,
+    .site-nav.is-scrolled {
+        top: auto;
+        bottom: 0;
+        width: 100% !important;
+        min-height: 4.75rem;
+        border-color: var(--hairline);
+        border-radius: 1.25rem 1.25rem 0 0;
+        background: rgba(20, 20, 20, .94);
+        backdrop-filter: blur(14px);
+    }
+
+    .site-nav__list {
+        justify-content: space-around;
+        gap: 0;
+        padding: .35rem .5rem;
+    }
+
+    .site-nav__list li {
+        flex: 1;
+    }
+
+    .site-nav__link {
+        flex-direction: column;
+        gap: .1rem;
+        min-height: 58px;
+        font-size: .68rem;
+    }
+
+    .site-nav__link i {
+        display: block;
+        font-size: 1.25rem;
+    }
+
+    .site-nav__dot {
+        top: .15rem;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+    }
+
+    .site-nav__link.is-active .site-nav__dot {
+        transform: translateX(-50%) scale(1);
+    }
+}

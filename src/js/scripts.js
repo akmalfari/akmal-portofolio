@@ -35,3 +35,37 @@ if (contactForm) {
         }
     });
 }
+
+const mainNav = document.getElementById('mainNav');
+
+if (mainNav) {
+    const pageName = (window.location.pathname.split('/').pop() || 'index.html').replace('.html', '');
+    const activeLink = mainNav.querySelector(`[data-page="${pageName}"]`);
+    activeLink?.classList.add('is-active');
+    activeLink?.setAttribute('aria-current', 'page');
+
+    let frameId;
+    const updateNav = () => {
+        const isDesktop = window.innerWidth >= 768;
+        mainNav.classList.toggle('is-scrolled', window.scrollY > 0);
+
+        if (isDesktop && window.scrollY > 0) {
+            const progress = Math.min(window.scrollY / 1000, 1);
+            const eased = 1 - Math.pow(1 - progress, 4);
+            const maximum = Math.min(window.innerWidth * .8, 1024);
+            const minimum = 528;
+            mainNav.style.width = `${maximum - (maximum - minimum) * eased}px`;
+        } else {
+            mainNav.style.removeProperty('width');
+        }
+        frameId = null;
+    };
+
+    const requestNavUpdate = () => {
+        if (!frameId) frameId = requestAnimationFrame(updateNav);
+    };
+
+    updateNav();
+    window.addEventListener('scroll', requestNavUpdate, { passive: true });
+    window.addEventListener('resize', requestNavUpdate);
+}

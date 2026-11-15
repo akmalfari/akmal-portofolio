@@ -2,175 +2,179 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Akmal-Portofolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Software projects by Akmal Zaida." />
+        <meta name="author" content="Akmal Zaida" />
+        <title>Projects | Akmal Zaida</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Akmal Zaida</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <div class="card border-0 rounded-4 mb-5 experience-card project-card overflow-hidden">
-                                <div class="project-img-wrap banner-style"><img src="assets/maildesk_banner.png" alt="MailDesk app showcase" /></div>
-                                <div class="card-body p-5">
-                                    <div class="d-flex justify-content-between align-items-start flex-wrap mb-1">
-                                        <div>
-                                            <h2 class="fw-bolder mb-1">MailDesk</h2>
-                                            <span class="badge tech-badge">Mobile App</span>
-                                        </div>
-                                        <span class="small text-muted">2026</span>
-                                    </div>
-                                    <div class="small text-muted mt-2 mb-3">Backend Developer &middot; Team Project (IT PENS x AgileTeknik)</div>
-                                    <p class="mb-3">A mail management application for internal company use, featuring OCR-based document scanning, structured archiving with a systematic file numbering system, and a multi-level disposition workflow to route incoming letters through the proper chain of approval. Published on the Google Play Store.</p>
-                                    <ul class="mb-3 ps-3">
-                                        <li>OCR for digitizing and reading incoming letters automatically.</li>
-                                        <li>Multi-level disposition tracking with automatic routing based on letter category.</li>
-                                        <li>Smart search with filters for quickly retrieving archived documents.</li>
-                                    </ul>
-                                    <div class="d-flex flex-wrap gap-2 mb-3">
-                                        <span class="badge tech-badge">C#</span>
-                                        <span class="badge tech-badge">REST API</span>
-                                        <span class="badge tech-badge">OCR</span>
-                                    </div>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        <a class="btn btn-primary btn-sm px-3 py-2 rounded-pill" href="https://play.google.com/store/apps/details?id=com.maildesk.app" target="_blank">
-                                            <i class="bi bi-google-play me-2"></i>
-                                            Play Store
-                                        </a>
-                                        <a class="btn btn-outline-primary btn-sm px-3 py-2 rounded-pill" href="https://github.com/akmalfari/Maildesk_be" target="_blank">
-                                            <i class="bi bi-github me-2"></i>
-                                            View Backend Code
-                                        </a>
-                                    </div>
-                                </div>
+    <body>
+        <nav class="site-nav" id="mainNav" aria-label="Primary navigation">
+            <ul class="site-nav__list">
+                <li>
+                    <a class="site-nav__link" href="index.html" data-page="index">
+                        <i class="bi bi-house-door" aria-hidden="true"></i>
+                        <span>Home</span>
+                        <span class="site-nav__dot" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="site-nav__link" href="resume.html" data-page="resume">
+                        <i class="bi bi-file-earmark-person" aria-hidden="true"></i>
+                        <span>Resume</span>
+                        <span class="site-nav__dot" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="site-nav__link" href="projects.html" data-page="projects">
+                        <i class="bi bi-folder2-open" aria-hidden="true"></i>
+                        <span>Projects</span>
+                        <span class="site-nav__dot" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="site-nav__link" href="contact.html" data-page="contact">
+                        <i class="bi bi-send" aria-hidden="true"></i>
+                        <span>Contact</span>
+                        <span class="site-nav__dot" aria-hidden="true"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main class="page-main">
+            <section class="site-shell">
+                <p class="eyebrow">My work</p>
+                <h1 class="page-title">Projects</h1>
+                <div class="projects-grid">
+                    <article class="project-tile">
+                        <div class="project-tile__image"><img src="assets/maildesk_banner.png" alt="MailDesk application showcase" loading="eager" /></div>
+                        <div class="project-tile__content">
+                            <div class="project-tile__copy">
+                                <h2>MailDesk</h2>
+                                <p>2026 &middot; Mobile App &middot; Backend Developer</p>
                             </div>
-                            <div class="card border-0 rounded-4 mb-5 experience-card project-card overflow-hidden">
-                                <div class="project-img-wrap">
-                                    <img src="assets/Temannasi.png" alt="Temannasi screenshot" />
-                                    <span class="project-tag-badge">WEB APP</span>
-                                    <a class="project-live-btn" href="https://temannasi.vercel.app/" target="_blank" title="Live Demo"><i class="bi bi-arrow-up-right"></i></a>
-                                </div>
-                                <div class="card-body p-5">
-                                    <div class="d-flex justify-content-between align-items-start flex-wrap mb-1">
-                                        <h2 class="fw-bolder mb-0">Temannasi</h2>
-                                        <span class="small text-muted">2025</span>
-                                    </div>
-                                    <div class="small text-muted mb-3">Full-stack Developer &middot; Personal Project</div>
-                                    <p class="mb-3">An online storefront for a home-based rendang business ("Mamie Ulie"), featuring a product catalog with category filters, customer testimonials, and a WhatsApp-based ordering system that auto-generates pre-filled order messages for each menu item.</p>
-                                    <div class="d-flex flex-wrap gap-2 mb-3"><span class="badge tech-badge">TypeScript</span></div>
-                                    <a class="btn btn-outline-primary btn-sm px-3 py-2 rounded-pill" href="https://github.com/akmalfari/Temannasi" target="_blank">
-                                        <i class="bi bi-github me-2"></i>
-                                        View Code
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card border-0 rounded-4 mb-5 experience-card project-card overflow-hidden">
-                                <div class="project-img-wrap">
-                                    <img src="assets/sarpra_banner.png" alt="SARPRA Admin Dashboard screenshot" />
-                                    <span class="project-tag-badge">WEB APP</span>
-                                </div>
-                                <div class="card-body p-5">
-                                    <div class="d-flex justify-content-between align-items-start flex-wrap mb-1">
-                                        <h2 class="fw-bolder mb-0">Sarpra Room Booking System</h2>
-                                        <span class="small text-muted">2025</span>
-                                    </div>
-                                    <div class="small text-muted mb-3">ASP.NET Course Project &middot; Team Project</div>
-                                    <p class="mb-3">A full-stack room booking management system, built as part of an ASP.NET course assignment. Consists of a frontend, a backend REST API, a mobile app, infrastructure setup, and documentation, allowing students and staff to book and manage rooms within a campus/organization more efficiently.</p>
-                                    <div class="d-flex flex-wrap gap-2 mb-3">
-                                        <span class="badge tech-badge">React</span>
-                                        <span class="badge tech-badge">Tailwind CSS</span>
-                                        <span class="badge tech-badge">ASP.NET Core</span>
-                                        <span class="badge tech-badge">MySQL</span>
-                                    </div>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        <a class="btn btn-outline-primary btn-sm px-3 py-2 rounded-pill" href="https://github.com/akmalfari/2026-sarpra-frontend" target="_blank">
-                                            <i class="bi bi-github me-2"></i>
-                                            Frontend
-                                        </a>
-                                        <a class="btn btn-outline-primary btn-sm px-3 py-2 rounded-pill" href="https://github.com/akmalfari/2026-sarpra-backend" target="_blank">
-                                            <i class="bi bi-github me-2"></i>
-                                            Backend
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-0 rounded-4 mb-5 experience-card project-card overflow-hidden">
-                                <div class="project-img-wrap">
-                                    <img src="assets/apppegawai_banner.png" alt="App Pegawai screenshot" />
-                                    <span class="project-tag-badge">WEB APP</span>
-                                </div>
-                                <div class="card-body p-5">
-                                    <div class="d-flex justify-content-between align-items-start flex-wrap mb-1">
-                                        <h2 class="fw-bolder mb-0">App Pegawai</h2>
-                                        <span class="small text-muted">2024</span>
-                                    </div>
-                                    <div class="small text-muted mb-3">PHP Course Project</div>
-                                    <p class="mb-3">An employee management CRUD application built with Laravel as part of a PHP programming course assignment. Allows adding, viewing, editing, and deleting employee records including personal details and employment status, presented through a clean, responsive interface.</p>
-                                    <div class="d-flex flex-wrap gap-2 mb-3">
-                                        <span class="badge tech-badge">Laravel</span>
-                                        <span class="badge tech-badge">MySQL</span>
-                                        <span class="badge tech-badge">Bootstrap</span>
-                                    </div>
-                                    <a class="btn btn-outline-primary btn-sm px-3 py-2 rounded-pill" href="https://github.com/akmalfari/app-pegawai" target="_blank">
-                                        <i class="bi bi-github me-2"></i>
-                                        View Code
-                                    </a>
-                                </div>
+                            <div class="project-tile__actions">
+                                <a class="icon-button" href="https://github.com/akmalfari/Maildesk_be" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                                    <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                        <path
+                                            d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
+                                        ></path>
+                                    </svg>
+                                </a>
+                                <a class="icon-button" href="https://play.google.com/store/apps/details?id=com.maildesk.app" target="_blank" rel="noopener noreferrer" aria-label="View MailDesk on Google Play"><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                    </div>
+                        <p class="project-tile__description">A mail management application for internal company use, featuring OCR-based document scanning, structured archiving with a systematic file numbering system, and a multi-level disposition workflow to route incoming letters through the proper chain of approval. Published on the Google Play Store. Built as a team project with IT PENS and AgileTeknik.</p>
+                        <div class="badge-list">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>REST API</span>
+                            <span>OCR</span>
+                        </div>
+                    </article>
+                    <article class="project-tile">
+                        <div class="project-tile__image"><img src="assets/Temannasi.png" alt="Temannasi storefront screenshot" loading="lazy" /></div>
+                        <div class="project-tile__content">
+                            <div class="project-tile__copy">
+                                <h2>Temannasi</h2>
+                                <p>2025 &middot; Web App &middot; Full-stack Developer</p>
+                            </div>
+                            <div class="project-tile__actions">
+                                <a class="icon-button" href="https://github.com/akmalfari/Temannasi" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                                    <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                        <path
+                                            d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
+                                        ></path>
+                                    </svg>
+                                </a>
+                                <a class="icon-button" href="https://temannasi.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the Temannasi website"><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-tile__description">An online storefront for a home-based rendang business ("Mamie Ulie"), featuring a product catalog with category filters, customer testimonials, and a WhatsApp-based ordering system that auto-generates pre-filled order messages for each menu item.</p>
+                        <div class="badge-list"><span>TypeScript</span></div>
+                    </article>
+                    <article class="project-tile">
+                        <div class="project-tile__image"><img src="assets/sarpra_banner.png" alt="SARPRA room booking dashboard" loading="lazy" /></div>
+                        <div class="project-tile__content">
+                            <div class="project-tile__copy">
+                                <h2>Sarpra Room Booking System</h2>
+                                <p>2025 &middot; Web App &middot; Team Project</p>
+                            </div>
+                            <div class="project-tile__actions">
+                                <a class="icon-button" href="https://github.com/akmalfari/2026-sarpra-frontend" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                                    <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                        <path
+                                            d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
+                                        ></path>
+                                    </svg>
+                                </a>
+                                <a class="icon-button" href="https://github.com/akmalfari/2026-sarpra-backend" target="_blank" rel="noopener noreferrer" aria-label="View Sarpra backend code"><i class="bi bi-server" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-tile__description">A full-stack room booking management system built as part of an ASP.NET course assignment. It consists of a frontend, backend REST API, mobile app, infrastructure setup, and documentation, allowing students and staff to book and manage rooms within a campus or organization.</p>
+                        <div class="badge-list">
+                            <span>React</span>
+                            <span>Tailwind CSS</span>
+                            <span>ASP.NET Core</span>
+                            <span>MySQL</span>
+                        </div>
+                    </article>
+                    <article class="project-tile">
+                        <div class="project-tile__image"><img src="assets/apppegawai_banner.png" alt="App Pegawai employee dashboard" loading="lazy" /></div>
+                        <div class="project-tile__content">
+                            <div class="project-tile__copy">
+                                <h2>App Pegawai</h2>
+                                <p>2024 &middot; Web App &middot; PHP Course Project</p>
+                            </div>
+                            <div class="project-tile__actions">
+                                <a class="icon-button" href="https://github.com/akmalfari/app-pegawai" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                                    <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                        <path
+                                            d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-tile__description">An employee management CRUD application built with Laravel as part of a PHP programming course. It supports adding, viewing, editing, and deleting employee records including personal details and employment status through a responsive interface.</p>
+                        <div class="badge-list">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </article>
                 </div>
-            </section>
-            <section class="py-5 bg-gradient-primary-to-secondary text-white">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
-                    </div>
-                </div>
+                <a class="projects-more" href="https://github.com/akmalfari" target="_blank" rel="noopener noreferrer">
+                    <span>More projects on GitHub</span>
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                </a>
             </section>
         </main>
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Akmal Zaida 2026</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="contact.html">Contact</a>
-                    </div>
+        <footer class="site-footer">
+            <div class="site-shell site-footer__grid">
+                <div class="site-footer__socials" aria-label="Social links">
+                    <a href="https://github.com/akmalfari" target="_blank" rel="noopener noreferrer" aria-label="Akmal Zaida on GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/akmal-zaida" target="_blank" rel="noopener noreferrer" aria-label="Akmal Zaida on LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+                    <a href="mailto:akmalfari1789@gmail.com" aria-label="Email Akmal Zaida"><i class="bi bi-envelope" aria-hidden="true"></i></a>
                 </div>
+                <div class="site-footer__stack">
+                    <span>Built with Bootstrap 5</span>
+                    <span>Deployed on Vercel</span>
+                </div>
+                <p class="site-footer__copyright">Copyright &copy; 2026 Akmal Zaida</p>
             </div>
         </footer>
+        <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
 </html>
